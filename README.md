@@ -15,6 +15,19 @@ The platform includes:
 - Alerting via Email/Telegram
 - Incident Simulation & Recovery
 
+## Project Principles
+
+- **Clarity:** Clear, well-documented design and intent to make onboarding fast and maintenance easy.
+- **Reproducibility:** Environments and deployments are reproducible via code and automation.
+- **Infrastructure as Code:** Manage infrastructure declaratively (ARM, Terraform, or templates).
+- **Automation:** Automate builds, deployments, testing, and alerting to reduce manual work and mistakes.
+- **Observability:** Capture metrics, logs, and traces; provide dashboards and actionable alerts.
+- **Security & Least Privilege:** Use secure defaults, minimal permissions, and proper secret management.
+- **Scalability & Resilience:** Design for load, failover, and graceful degradation.
+- **Testing & Validation:** Include automated tests and incident simulations to validate behaviour.
+- **Collaboration & Documentation:** Keep documentation and runbooks up-to-date for team collaboration.
+- **Continuous Improvement:** Iterate on monitoring, alerting, and runbooks based on incidents and metrics.
+
 ## Architecture
 
 ```text
