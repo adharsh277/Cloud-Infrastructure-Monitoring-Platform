@@ -5,7 +5,6 @@
 
 ![Microsoft Azure](https://img.shields.io/badge/Microsoft%20Azure-Cloud-0078D4?logo=microsoftazure)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu-Linux-E95420?logo=ubuntu)
-![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?logo=docker)
 ![Nginx](https://img.shields.io/badge/Nginx-Web%20Server-009639?logo=nginx)
 ![Zabbix](https://img.shields.io/badge/Zabbix-Monitoring-D40000)
 ![Grafana](https://img.shields.io/badge/Grafana-Visualization-F46800?logo=grafana)
@@ -17,7 +16,6 @@
 The platform includes:
 
 - Azure Virtual Machines
-- Dockerized Applications
 - Nginx Reverse Proxy
 - PostgreSQL Database
 - Zabbix Monitoring
