@@ -87,15 +87,11 @@ Installed Zabbix Server and Zabbix Agent on the Azure VM. Configured monitoring 
 
 ### Screenshots
 
-![Phase 3 Zabbix Host](alerting/zabbix%20host.png)
+![Phase 3 Waiting Screen](alerting/waitign.png)
 
-![Phase 3 Zabbix Success](alerting/zabbix%20succes.png)
+![Phase 3 Interface](alerting/interfac.png)
 
-![Phase 3 Interface](alerting/interface.png)
-
-![Phase 3 Plugins](alerting/plugins.png)
-
-![Phase 3 Zabbix](alerting/zabix%20.png)
+![Phase 3 Zabbix Success](alerting/zabbix-success.png)
 
 Monitored Metrics
 CPU Utilization
