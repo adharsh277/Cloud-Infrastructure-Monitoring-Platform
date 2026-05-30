@@ -72,7 +72,7 @@ Installed and configured Nginx on the Azure Virtual Machine. Configured networki
 
 ### Screenshot
 
-![Phase 2 SSH to Zabbix Server VM](application-deployment/ssh%20vm%20zabbix%20server.png)
+![Phase 2 SSH to Zabbix Server VM](application-deployment/zabbix-server.png)
 
 ## Phase 3 – Monitoring Platform Setup
 
