@@ -46,6 +46,10 @@ VM3
 ├── PostgreSQL
 ```
 
+## Arc Diagram
+
+![Arc Diagram](diagram%20arc/arc-diagram.png)
+
 ## Project Phases
 
 ### Phase 1 – Infrastructure Setup
