@@ -1,8 +1,18 @@
-# Cloud Infrastructure Monitoring & Incident Alerting Platform
+# Cloud Infrastructure Monitoring & Visualization Platform
+**Azure | Linux | Docker | Nginx | Zabbix | Grafana | Infrastructure Monitoring | Observability**
 
-## Project Overview
+---
 
-This project demonstrates a production-style monitoring and observability platform deployed on Microsoft Azure.
+![Microsoft Azure](https://img.shields.io/badge/Microsoft%20Azure-Cloud-0078D4?logo=microsoftazure)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-Linux-E95420?logo=ubuntu)
+![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?logo=docker)
+![Nginx](https://img.shields.io/badge/Nginx-Web%20Server-009639?logo=nginx)
+![Zabbix](https://img.shields.io/badge/Zabbix-Monitoring-D40000)
+![Grafana](https://img.shields.io/badge/Grafana-Visualization-F46800?logo=grafana)
+![Linux](https://img.shields.io/badge/Linux-System%20Administration-FCC624?logo=linux)
+![Azure VM](https://img.shields.io/badge/Azure-VM%20Hosting-0078D4)
+![Observability](https://img.shields.io/badge/Observability-Real--Time%20Monitoring-blue)
+![Infrastructure Monitoring](https://img.shields.io/badge/Infrastructure-Monitoring-success)
 
 The platform includes:
 
@@ -17,34 +27,16 @@ The platform includes:
 
 ## Project Principles
 
-- **Clarity:** Clear, well-documented design and intent to make onboarding fast and maintenance easy.
-- **Reproducibility:** Environments and deployments are reproducible via code and automation.
-- **Infrastructure as Code:** Manage infrastructure declaratively (ARM, Terraform, or templates).
-- **Automation:** Automate builds, deployments, testing, and alerting to reduce manual work and mistakes.
-- **Observability:** Capture metrics, logs, and traces; provide dashboards and actionable alerts.
-- **Security & Least Privilege:** Use secure defaults, minimal permissions, and proper secret management.
-- **Scalability & Resilience:** Design for load, failover, and graceful degradation.
-- **Testing & Validation:** Include automated tests and incident simulations to validate behaviour.
-- **Collaboration & Documentation:** Keep documentation and runbooks up-to-date for team collaboration.
-- **Continuous Improvement:** Iterate on monitoring, alerting, and runbooks based on incidents and metrics.
+Project Overview
 
-## Architecture
+This project demonstrates a cloud-based infrastructure monitoring and observability platform deployed on Microsoft Azure.
 
-```text
-Azure
+The primary goal of the project was to monitor server health, collect infrastructure metrics, and visualize system performance in real time using industry-standard monitoring tools.
 
-VM1
-├── Zabbix Server
-├── Grafana
+The platform provides visibility into critical system resources and helps identify infrastructure issues proactively through centralized monitoring dashboards.
 
-VM2
-├── Docker
-├── Nginx
-├── Sample Application
 
-VM3
-├── PostgreSQL
-```
+
 
 ## Arc Diagram
 
@@ -52,35 +44,98 @@ VM3
 
 ## Project Phases
 
-### Phase 1 – Infrastructure Setup
+## Phase 1 – Azure Infrastructure Setup
 
-- Azure Resource Group
-- Virtual Network
-- Linux Virtual Machines
-- Networking & Security Rules
+Components
+Azure Resource Group
+Virtual Network
+Network Security Groups (NSG)
+Ubuntu Virtual Machine
+SSH Access
+Implementation
 
-### Phase 2 – Application Deployment
+Created an Ubuntu Linux Virtual Machine in Microsoft Azure and configured networking, security rules, and secure remote access through SSH. The VM serves as the central monitoring server hosting all monitoring and visualization components.
 
-- Docker
-- Nginx
-- Sample Web Application
+## Phase 2 – Service Deployment & Server Configuration
 
-### Phase 3 – Monitoring Setup
+Components
+Ubuntu Linux
+Nginx
+Linux Service Management
+Implementation
 
-- Zabbix Server
-- Zabbix Agent
-- Host Monitoring
-- Triggers & Templates
+Installed and configured Nginx on the Azure Virtual Machine. Configured networking and verified service availability. Prepared the Linux environment for monitoring and observability by managing services and validating server accessibility.
 
-### Phase 4 – Dashboard & Alerting
+## Phase 3 – Monitoring Platform Setup
 
-- Grafana Dashboards
-- Email Alerts
-- Telegram Notifications
+Components
+Zabbix Server
+Zabbix Agent
+Monitoring Templates
+Infrastructure Metrics Collection
+Implementation
 
-### Phase 5 – Incident Response
+Installed Zabbix Server and Zabbix Agent on the Azure VM. Configured monitoring templates to automatically collect infrastructure metrics from the monitored server.
 
-- Nginx Failure
-- High CPU Usage
-- Disk Full Simulation
-- Docker Container Failure
+Monitored Metrics
+CPU Utilization
+Memory Utilization
+Disk Usage
+Network Traffic
+System Availability
+
+The Zabbix Agent continuously collects system metrics and sends them to the Zabbix Server for storage, analysis, and monitoring.
+
+## Phase 4 – Visualization & Observability
+
+Components
+Grafana
+Zabbix Grafana Plugin
+Monitoring Dashboards
+Implementation
+
+Integrated Grafana with Zabbix using the Zabbix API and Grafana Zabbix Plugin. Created real-time dashboards to visualize infrastructure health and server performance.
+
+Dashboard Panels
+CPU Utilization
+Memory Utilization
+Disk Usage
+Network Traffic
+
+Grafana provides centralized visibility into infrastructure performance and simplifies monitoring and troubleshooting.
+
+## How It Works
+
+Nginx runs on the Azure Virtual Machine.
+Zabbix Agent continuously collects infrastructure metrics.
+Zabbix Server stores and processes the collected monitoring data.
+Grafana connects to Zabbix through the Zabbix API.
+Grafana visualizes CPU, memory, disk, and network metrics using dashboards.
+Administrators can monitor system health and identify performance issues in real time.
+
+## Technologies Used
+
+Microsoft Azure
+Ubuntu Linux
+Nginx
+Zabbix Server
+Zabbix Agent
+Grafana
+Linux Administration
+Infrastructure Monitoring
+Observability
+Dashboard Metrics
+CPU Usage
+Memory Usage
+Disk Utilization
+Network Traffic
+System Health Monitoring
+
+## Key Outcomes
+
+Built a cloud-based monitoring and observability platform on Azure.
+Implemented infrastructure monitoring using Zabbix Server and Agent.
+Integrated Grafana with Zabbix for real-time dashboard visualization.
+Monitored critical server resources including CPU, memory, disk, and network usage.
+Configured and managed Linux services in a cloud environment.
+Gained hands-on experience with cloud infrastructure, monitoring, observability, and DevOps operations.
