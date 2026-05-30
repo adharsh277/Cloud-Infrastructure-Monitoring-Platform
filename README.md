@@ -56,6 +56,10 @@ Implementation
 
 Created an Ubuntu Linux Virtual Machine in Microsoft Azure and configured networking, security rules, and secure remote access through SSH. The VM serves as the central monitoring server hosting all monitoring and visualization components.
 
+### Screenshot
+
+![Phase 1 Infrastructure Setup](application-deployment/infra.png)
+
 ## Phase 2 – Service Deployment & Server Configuration
 
 Components
@@ -65,6 +69,10 @@ Linux Service Management
 Implementation
 
 Installed and configured Nginx on the Azure Virtual Machine. Configured networking and verified service availability. Prepared the Linux environment for monitoring and observability by managing services and validating server accessibility.
+
+### Screenshot
+
+![Phase 2 SSH to Zabbix Server VM](application-deployment/ssh%20vm%20zabbix%20server.png)
 
 ## Phase 3 – Monitoring Platform Setup
 
@@ -76,6 +84,18 @@ Infrastructure Metrics Collection
 Implementation
 
 Installed Zabbix Server and Zabbix Agent on the Azure VM. Configured monitoring templates to automatically collect infrastructure metrics from the monitored server.
+
+### Screenshots
+
+![Phase 3 Zabbix Host](alerting/zabbix%20host.png)
+
+![Phase 3 Zabbix Success](alerting/zabbix%20succes.png)
+
+![Phase 3 Interface](alerting/interface.png)
+
+![Phase 3 Plugins](alerting/plugins.png)
+
+![Phase 3 Zabbix](alerting/zabix%20.png)
 
 Monitored Metrics
 CPU Utilization
@@ -95,6 +115,10 @@ Monitoring Dashboards
 Implementation
 
 Integrated Grafana with Zabbix using the Zabbix API and Grafana Zabbix Plugin. Created real-time dashboards to visualize infrastructure health and server performance.
+
+### Screenshot
+
+![Phase 4 Grafana Dashboard](monitoring/grafana.png)
 
 Dashboard Panels
 CPU Utilization
