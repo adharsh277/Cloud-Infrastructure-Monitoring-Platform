@@ -17,11 +17,9 @@ The platform includes:
 
 - Azure Virtual Machines
 - Nginx Reverse Proxy
-- PostgreSQL Database
+- MySQL Database
 - Zabbix Monitoring
 - Grafana Dashboards
-- Alerting via Email/Telegram
-- Incident Simulation & Recovery
 
 ## Project Principles
 
