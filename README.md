@@ -1,6 +1,5 @@
 # Cloud Infrastructure Monitoring & Visualization Platform
 **Azure | Linux | Docker | Nginx | Zabbix | Grafana | Infrastructure Monitoring | Observability**
-
 ---
 
 ![Microsoft Azure](https://img.shields.io/badge/Microsoft%20Azure-Cloud-0078D4?logo=microsoftazure)
